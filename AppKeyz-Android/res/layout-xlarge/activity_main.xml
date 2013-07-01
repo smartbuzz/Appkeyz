@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/defaultbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/helpReltaiveView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/black"
+            android:paddingTop="20dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/helpTextViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_help_header"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/helpTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/sign_up_help"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/b3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             >
+
+            <ImageView
+                android:id="@+id/imageLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/user" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:text="Log In"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/imageLogin"
+                android:layout_centerInParent="true"
+                android:gravity="left|center_vertical"
+             
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        <!-- <View
+                android:id="@+id/viewLine"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/view_line" /> -->
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/b2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           >
+
+            <ImageView
+                android:id="@+id/imageRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/plus" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:text="Create Account"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+               android:layout_toRightOf="@id/imageRegister"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:background="@android:color/transparent" >
+
+            <Button
+                android:id="@+id/btnSignUpHelp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:textSize="35dp"
+                android:text="Why should I sign up?"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent" >
+
+            <Button
+                android:id="@+id/btnNoThanks"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:text="No Thanks"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

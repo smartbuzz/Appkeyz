@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppKeyz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="sign_up_help_header">Why should I sign up?</string>
+    <string name="sign_up_help">Register with us and be able to access this app and your profile from any device.  Receive cool perks, deals and news about upcoming features.</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_appkeyz">AppkeyzActivity</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="Without_Login_Dialog">Without logging in,you will be\n unable to access your Account\n update your account\n of any purchase or access these\n purchase from other device.</string>
+
+</resources>

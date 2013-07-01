@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+    <RelativeLayout
+        android:id="@+id/outer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#d6dbe4" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="User Actions"
+            android:textSize="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/user_account"
+            android:layout_width="fill_parent"
+            android:layout_height="105dp"
+            android:layout_below="@id/textView8"
+            android:layout_margin="10dp"
+            android:background="@drawable/list_bg" >
+
+         <Button
+                android:id="@+id/btnEditProfil"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Edit Account"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+         <View
+                android:id="@+id/viewLine"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/btnEditProfil"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:layout_marginTop="3dp"
+                android:text="Logout"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/purchase_action_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_account"
+            android:text="Purchase Actions"
+            android:textSize="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+       <RelativeLayout
+            android:id="@+id/user_action"
+            android:layout_width="fill_parent"
+            android:layout_height="284dp"
+            android:layout_below="@id/purchase_action_textview"
+            android:layout_margin="10dp"
+            android:background="@drawable/list_bg" >
+
+            <Button
+                android:id="@+id/createPurchase"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Create Purchases"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/createPurchase"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/listPurchase"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="List Purchases"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <View
+                android:id="@+id/viewLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/listPurchase"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+            <Button
+                android:id="@+id/readPurchase"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine1"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Read Purchases"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/readPurchase"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/updatePurchase"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine2"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Update Purchases"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/updatePurchase"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/deactivatePurchase"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine3"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Deactivate Purchases"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/device_action_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_action"
+            android:text="Device Actions"
+            android:textSize="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/device_action"
+            android:layout_width="fill_parent"
+            android:layout_height="284dp"
+            android:layout_below="@id/device_action_textview"
+            android:layout_margin="10dp"
+            android:background="@drawable/list_bg" >
+
+            <Button
+                android:id="@+id/createDevice"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Create Device"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/createDevice"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/listDevice"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="List Device"
+                 android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/listDevice"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/readDevice"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine2"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Read Device"
+                 android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/readDevice"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/updateDevice"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine3"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Update Device"
+                 android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine4"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/updateDevice"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/deleteDevice"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine4"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Delete Device"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/consumable_action_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_action"
+            android:text="Consumable Actions"
+            android:textSize="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/consumable_action"
+            android:layout_width="fill_parent"
+            android:layout_height="163dp"
+            android:layout_below="@id/consumable_action_textview"
+            android:layout_margin="10dp"
+            android:background="@drawable/list_bg" >
+
+            <Button
+                android:id="@+id/listConsuable"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="List Consuable"
+                 android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/listConsuable"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/readConsuable"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Read Consuable"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/readConsuable"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/view_line" />
+
+            <Button
+                android:id="@+id/udpdateConsuable"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/viewLine2"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="Update Consuable"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_below="@id/consumable_action" />
+    </RelativeLayout>
+</ScrollView>
